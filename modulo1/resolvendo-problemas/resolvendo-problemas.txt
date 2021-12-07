@@ -1,0 +1,52 @@
+ **Exercícios de fixação do conhecimento**
+    
+    Faça um resumo sobre quais são os 7 passos fundamentais para a resolução de problemas e como eles podem nos ajudar a solucionar nossos desafios de programação.
+
+    Os sete passos fundamentais para a resolução de problemas são, respectivamente: 
+    
+    1. Ter atenção no enunciado
+
+        Dentro do universo da programação, prestar atenção no que deve ser feito e o que o código precisa executar/resultar é a chave do sucesso. Uma vez bem entendida a questão e/ou o problema 
+        que o dev deverá enfrentar, mais rápido e mais fácil será a resolução desse problema. Mas, não há de se falar apenas em facilidade e rapidez. Entender o enunciado é otimizar o código, já
+        que será mais objetivo e mais 'clean'. Na aula de hoje, o professor indicou que ter atenção no enunciado deve passar por duas vertentes: saber o que o código deve fazer & quais informações 
+        são únicas.
+
+    
+    2. Retirar informações relevantes
+
+        Nesse segundo passo, é importante se atentar para a parte prática do problema. Quais informações que o requerente nos dá que serão úteis e essenciais para resolução do nosso problema? 
+        Essa questão é a que o dev deverá encarar ao tentar retirar informações relevantes, por exemplo, ao separar palavras chaves, como nome sugestivos de variaveis, além de observar bem a 
+        gramática do desafio, sendo que os verbos criarão as funções, bem como se atentar para a ocorrência de alguma condição para a existência do código.
+
+
+    3. Pensar entradas e saídas
+
+        Nesse passo, o dev deverá se atentar nas entradas e saídas que o código proverá. Ou seja, o desenvoledor deverá saber quais os dados serão recebidos e como eles serão recebidos, bem como
+        quais deverão ser as possíveis respostas e cada caminho que tais respostas ocasionará. Após o pensamento lógico, colocar na prática através de funções, com entradas e saídas bem pensadas,
+        sem deixar que haja ponto sem nó.
+
+    
+    4. Fazer um esquema visual
+
+        O quarto passo é o que indica ao dev pensar novamente acerca dos cenários e possibilidades que o código trará ao usuário. Dessa maneira, o obriga a pensar em situações antes que o código seja
+        executado. O professor ainda indica a montagem de diagramas com a lógica do código, bem como que o desenvolver pense em possíveis cenários e coloque de fato os inputs e outputs no código.
+
+
+    5. Criar um código feio 
+
+        Esse passo é o mais importante, na minha opinião. Sair do zero em desafios e exercícios aqui na Labenu foi a parte mais trabalhosa. No entanto, quando se cria um código feio e observa-se
+        os erros que o código indica, fica infinitamente mais fácil de resolver e achar soluções para aquilo que 10 minutos atrás era insolucionável. O professor nos diz para que não tenhamos medo
+        de começar, e que é para colocarmos no papel todas as  possívels soluções pensadas e após na IDE. Após disso, o professor indica que testemos cada uma das soluções até obter uma resposta
+        daquilo que foi proposto no enunciado.
+
+
+    6. Testar: força bruta
+
+        O passo mais simples de ser entendido: teste o seu código! Mesmo que o código feio pareça não funcionar, muitas vezes é ele que será nosso código refatorado que trará bons frutos. 
+        Dicas que o professor deu em sala de aula: Testar mesmo que seja uma solução óbvia e pouco performática, Escrever no nosso idioma o programa & Transcrever para a linguagem de programação desejada. 
+
+
+    7. Refatorar
+
+        O último passo é o conhecido teste de qualidade do dev. Refatorar o código é nada mais nada menos que retocar tudo aquilo que há de feio feito no passo (5). Ou seja, renomear as variaveis
+        e as funções de maneira mais objetiva e clara e separar as funções de cada elemento. Ou seja, refatorar é passar o código pelo "Clean code".
