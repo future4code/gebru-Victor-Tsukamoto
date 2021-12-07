@@ -11,59 +11,143 @@
  * 
  */
 
+projeto-blackjack
+
 console.log("Boas vindas ao jogo de Blackjack!")
 const novaRodada = confirm("Quer iniciar uma nova rodada?")
 if (novaRodada === false) {
-    alert("O jogo acabou.")
+    console.log("O jogo acabou.")
 } else if (novaRodada === true) {
+    let carta1 = comprarCarta()
+    let carta2 = comprarCarta()
+        // console.log(`Usuário - Cartas: ${carta1.texto + carta2.texto} - Pontuação: ${carta1.valor + carta2.valor}`)
 
-    const carta1 = comprarCarta()
-    const carta2 = comprarCarta()
-        //   console.log(`Usuário - Cartas: ${carta1.texto + carta2.texto} - Pontuação: ${carta1.valor + carta2.valor}`)
+    let cartaComputador1 = comprarCarta()
+    let cartaComputador2 = comprarCarta()
 
-    const cartaComputador1 = comprarCarta()
-    const cartaComputador2 = comprarCarta()
-        //   console.log(`Computador - Cartas: ${cartaComputador1.texto + cartaComputador2.texto} - Pontuação: ${cartaComputador1.valor + cartaComputador2.valor}`)
+    // console.log(`Computador - Cartas: ${cartaComputador1.texto + cartaComputador2.texto} - Pontuação: ${cartaComputador1.valor + cartaComputador2.valor}`)
+
+    let cartasJogador = ((carta1.valor + carta2.valor))
+    let cartasComputador = ((cartaComputador1.valor + cartaComputador2.valor))
 
 
-    if (carta1.valor + carta2.valor > 21) {
-        const carta1 = comprarCarta()
-        const carta2 = comprarCarta()
-    } else if (cartaComputador1.valor + cartaComputador2.valor > 21) {
-        const cartaComputador1 = comprarCarta()
-        const cartaComputador2 = comprarCarta()
+    if (cartaComputador1.texto === "A", cartaComputador2.texto === "A") {
+        cartaComputador1 = comprarCarta()
+        cartaComputador2 = comprarCarta()
+    } else if (carta1.valor = "A", carta2.valor = "A") {
+        carta1 = comprarCarta()
+        carta2 = comprarCarta()
     }
 
 
-
-    const comprarMaisUmaCarta = confirm(
-        `Suas cartas são ${carta1.valor} e ${carta2.valor}. A carta revelada do computador é ${cartaComputador1.valor}." +
-      "\n"+ 
-      "Deseja comprar mais uma carta?`
+    const novaCarta = confirm(
+        `Suas cartas são ${carta1.texto} ${carta2.texto}. A carta revelada do computador é ${cartaComputador1.texto}. ` +
+        "\n" +
+        "Deseja comprar mais uma carta?"
     )
-    if (comprarMaisUmaCarta === true) {
-        const carta3 = comprarCarta()
-    } else if (comprarMaisUmaCarta === false) {}
 
+    if (novaCarta === false) {
+        let cartasJogador = ((carta1.valor + carta2.valor))
+        let cartasComputador = ((cartaComputador1.valor + cartaComputador2.valor))
+        console.log(`Usuário - Cartas: ${carta1.texto + carta2.texto} - Pontuação: ${carta1.valor + carta2.valor}`)
+        console.log(`Computador - Cartas: ${cartaComputador1.texto + cartaComputador2.texto} - Pontuação: ${cartaComputador1.valor + cartaComputador2.valor}`)
 
-    const cartasJogador = (carta1.valor + carta2.valor)
-    const cartasComputador = (cartaComputador1.valor + cartaComputador2.valor)
+        if (cartasJogador > 21 + cartasComputador > 21) {
 
-
-
-    if (cartasJogador > 21, cartasComputador <= 21) {
-        console.log("O computador ganhou!")
-    } else if (cartasJogador <= 21, cartasComputador > 21) {
-        console.log("O Usuário Ganhou!")
-        if (cartasJogador > 21, cartasComputador > 21) {
             console.log("Empate!")
         } else if (cartasJogador === cartasComputador) {
             console.log("Empate!")
         }
+ projeto-blackjack
+        if (cartasComputador <= 21, cartasJogador >= 22) {
+            console.log("O computador ganhou!")
+        } else if (cartasJogador <= 21, cartasComputador >= 22) {
+            console.log("O Usuário Ganhou!")
+        } else if (cartasJogador > cartasComputador) {
+
         if (cartasJogador > cartasComputador) {
+ master
             console.log("O usuário ganhou!")
         } else if (cartasJogador < cartasComputador) {
             console.log("O computador ganhou!")
         }
     }
+ projeto-blackjack
+
+
+    if (novaCarta === true) {
+        let carta3 = comprarCarta()
+        let cartasJogador = ((carta1.valor + carta2.valor + carta3.valor))
+        if (cartasJogador >= 21) {
+            console.log(`Usuário - Cartas: ${carta1.texto + carta2.texto + carta3.texto} - Pontuação: ${carta1.valor + carta2.valor + carta3.valor}`)
+            console.log(`Computador - Cartas: ${cartaComputador1.texto + cartaComputador2.texto} - Pontuação: ${cartaComputador1.valor + cartaComputador2.valor}`)
+            if (cartasJogador > 21 + cartasComputador > 21) {
+                console.log("Empate!")
+            } else if (cartasJogador === cartasComputador) {
+                console.log("Empate!")
+            }
+            if (cartasComputador <= 21, cartasJogador >= 22) {
+                console.log("O computador ganhou!")
+            } else if (cartasJogador <= 21, cartasComputador >= 22) {
+                console.log("O Usuário Ganhou!")
+            } else if (cartasJogador > cartasComputador) {
+                console.log("O usuário ganhou!")
+            } else if (cartasJogador < cartasComputador) {
+                console.log("O computador ganhou!")
+            }
+
+        } else if (cartasJogador < 21) {
+            const novaCarta2 = confirm(
+                `Suas cartas são ${carta1.texto} ${carta2.texto} ${carta3.texto}. A carta revelada do computador é ${cartaComputador1.texto}. ` +
+                "\n" +
+                "Deseja comprar mais uma carta?")
+
+            if (novaCarta2 === false) {
+                let cartasJogador = ((carta1.valor + carta2.valor + carta3.valor))
+                let cartasComputador = ((cartaComputador1.valor + cartaComputador2.valor))
+                console.log(`Usuário - Cartas: ${carta1.texto + carta2.texto + carta3.texto} - Pontuação: ${carta1.valor + carta2.valor + carta3.valor}`)
+                console.log(`Computador - Cartas: ${cartaComputador1.texto + cartaComputador2.texto} - Pontuação: ${cartaComputador1.valor + cartaComputador2.valor}`)
+
+                if (cartasJogador > 21 + cartasComputador > 21) {
+                    console.log("Empate!")
+                } else if (cartasJogador === cartasComputador) {
+                    console.log("Empate!")
+                }
+                if (cartasComputador <= 21, cartasJogador >= 22) {
+                    console.log("O computador ganhou!")
+                } else if (cartasJogador <= 21, cartasComputador >= 22) {
+                    console.log("O Usuário Ganhou!")
+                } else if (cartasJogador > cartasComputador) {
+                    console.log("O usuário ganhou!")
+                } else if (cartasJogador < cartasComputador) {
+                    console.log("O computador ganhou!")
+                }
+            }
+
+
+            if (novaCarta2 === true) {
+                let carta4 = comprarCarta()
+                let cartasJogador = ((carta1.valor + carta2.valor + carta3.valor + carta4.valor))
+                if (cartasJogador >= 21) {
+                    console.log(`Usuário - Cartas: ${carta1.texto + carta2.texto + carta3.texto + carta4.texto} - Pontuação: ${carta1.valor + carta2.valor + carta3.valor + carta4.valor}`)
+                    console.log(`Computador - Cartas: ${cartaComputador1.texto + cartaComputador2.texto} - Pontuação: ${cartaComputador1.valor + cartaComputador2.valor}`)
+                    if (cartasJogador > 21 + cartasComputador > 21) {
+                        console.log("Empate!")
+                    } else if (cartasJogador === cartasComputador) {
+                        console.log("Empate!")
+                    }
+                    if (cartasComputador <= 21, cartasJogador >= 22) {
+                        console.log("O computador ganhou!")
+                    } else if (cartasJogador <= 21, cartasComputador >= 22) {
+                        console.log("O Usuário Ganhou!")
+                    } else if (cartasJogador > cartasComputador) {
+                        console.log("O usuário ganhou!")
+                    } else if (cartasJogador < cartasComputador) {
+                        console.log("O computador ganhou!")
+                    }
+                }
+            }
+        }
+    }
+ master
 }
