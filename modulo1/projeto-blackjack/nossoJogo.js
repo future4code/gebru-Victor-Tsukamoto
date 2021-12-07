@@ -24,6 +24,7 @@
 //     console.log(`Computador - Cartas: ${cartaComputador1.texto + cartaComputador2.texto} - Pontuação: ${cartaComputador1.valor + cartaComputador2.valor}`)
 //     const cartasJogador = (carta1.valor + carta2.valor)
 //     const cartasComputador = (cartaComputador1.valor + cartaComputador2.valor)
+ projeto-blackjack
 
 
 

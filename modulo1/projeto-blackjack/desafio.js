@@ -11,6 +11,7 @@
  * 
  */
 
+projeto-blackjack
 
 console.log("Boas vindas ao jogo de Blackjack!")
 const novaRodada = confirm("Quer iniciar uma nova rodada?")
@@ -52,20 +53,26 @@ if (novaRodada === false) {
         console.log(`Computador - Cartas: ${cartaComputador1.texto + cartaComputador2.texto} - Pontuação: ${cartaComputador1.valor + cartaComputador2.valor}`)
 
         if (cartasJogador > 21 + cartasComputador > 21) {
+
             console.log("Empate!")
         } else if (cartasJogador === cartasComputador) {
             console.log("Empate!")
         }
+ projeto-blackjack
         if (cartasComputador <= 21, cartasJogador >= 22) {
             console.log("O computador ganhou!")
         } else if (cartasJogador <= 21, cartasComputador >= 22) {
             console.log("O Usuário Ganhou!")
         } else if (cartasJogador > cartasComputador) {
+
+        if (cartasJogador > cartasComputador) {
+ master
             console.log("O usuário ganhou!")
         } else if (cartasJogador < cartasComputador) {
             console.log("O computador ganhou!")
         }
     }
+ projeto-blackjack
 
 
     if (novaCarta === true) {
@@ -142,4 +149,5 @@ if (novaRodada === false) {
             }
         }
     }
+ master
 }
