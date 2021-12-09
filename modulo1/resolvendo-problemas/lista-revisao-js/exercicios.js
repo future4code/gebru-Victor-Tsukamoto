@@ -88,7 +88,17 @@ function retornaNPrimeirosPares(n) {
 
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {
+    const ladoANumber = Number(ladoA)
+    const ladoBNumber = Number(ladoB)
+    const ladoCNumber = Number(ladoC)
 
+    if (ladoANumber == ladoBNumber && ladoANumber == ladoCNumber) {
+        return "Equilátero"
+    } else if (ladoANumber != ladoBNumber && ladoANumber != ladoCNumber && ladoBNumber != ladoCNumber) {
+        return "Escaleno"
+    } else {
+        return "Isósceles"
+    }
 }
 
 // EXERCÍCIO 10
