@@ -25,11 +25,27 @@ function retornaArrayOrdenado(array) {
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
 
+    function numerosPares(valorDoArray) {
+        if (valorDoArray % 2 == 0)
+            return valorDoArray;
+    }
+    let numerosPares2 = array.filter(numerosPares);
+    return numerosPares2
 }
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
+    function numerosPares(valorDoArray) {
+        if (valorDoArray % 2 == 0)
+            return valorDoArray;
+    }
+    let numerosPares2 = array.filter(numerosPares);
+    let numerosParesElevadosADois = []
 
+    for (let i = 0; i < numerosPares2.length; i++) {
+        numerosParesElevadosADois.push((Math.pow(numerosPares2[i], 2)))
+    }
+    return numerosParesElevadosADois
 }
 
 // EXERCÍCIO 06
