@@ -54,7 +54,7 @@ function retornaMaiorNumero(array) {
     return maiorNumero
 }
 
-// EXERCÍCIO 0
+// EXERCÍCIO 07
 
 function retornaObjetoEntreDoisNumeros(num1, num2) {
     const numerosArray = ([num1, num2])
@@ -70,8 +70,21 @@ function retornaObjetoEntreDoisNumeros(num1, num2) {
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
+    const retornaNumerosPares = (n) => {
+        const array = []
 
+        for (let i = 0; array.length < n; i++) {
+            if (i % 2 === 0) {
+                array.push(i)
+            }
+        }
+        return array
+    }
+
+    return retornaNumerosPares(n)
 }
+
+
 
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {
