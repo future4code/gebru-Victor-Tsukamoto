@@ -50,7 +50,8 @@ function retornaNumerosParesElevadosADois(array) {
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-
+    const maiorNumero = Math.max(...array)
+    return maiorNumero
 }
 
 // EXERCÍCIO 07
