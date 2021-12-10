@@ -149,8 +149,16 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
+    const contas2 = contas.map((user) => {
+        const valorCompras = user.compras.reduce((partial_sum, a) => partial_sum + a, 0)
 
+        user.saldoTotal = user.saldoTotal - (valorCompras),
+            user.compras = []
+        return user
+    })
+    return contas2
 }
+
 
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
