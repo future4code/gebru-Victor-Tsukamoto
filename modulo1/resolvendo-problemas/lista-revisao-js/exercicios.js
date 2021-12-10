@@ -172,4 +172,17 @@ function retornaArrayOrdenadoAlfabeticamente(consultas) {
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
 
+
+    const consultasComDataFormatada = consultas.map((datas) => {
+        let data = new Date(datas.dataDaConsulta);
+        let dataFormatada = ((data.getDate())) + "/" + ((data.getMonth() + 1)) + "/" + data.getFullYear();
+        datas.dataDaConsulta = dataFormatada
+        return datas
+    })
+
+    consultasComDataFormatada.sort(function ordemDecrescente(a, b) {
+        return a.data < b.data;
+    })
+
+    return consultasComDataFormatada
 }
