@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Página de Vendas</title>
+</head>
+
+<body>
+
+    <p>
+        <h1 class="titulo-principal">Bem-vindo(a) a Drip Imports</h1>
+    </p>
+
+
+    <div>
+        <button type="submit"><a class="botao1" href="index.html">Página Inicial</a></button>
+        <button type="submit"><a class="botao2" href="ctrl-estoque.html">Controle de Estoque</a></button>
+        <button type="submit"><a class="botao3" href="add-produto.html">Adicionar Produto</a></button>
+        <button type="submit"><a class="botao4" href="funcionarios.html">Funcionários</a></button>
+        <button type="submit"><a class="botao5" href="pagina-de-venda.html">Página de vendas</a></button>
+        <button type="submit"><a class="botao6" href="historico-de-venda.html">Histórico de Vendas</a></button>
+    </div>
+
+    <h2 class="adicionar-produto-txt">Adicionar Produto</h2>
+    <form action="" method="get">
+        <div class="formularios-adicionar-produtos ">
+            <label for="produto-vendido ">Produto vendido: </label>
+            <input class=input-geral type="url " id="produto-vendido " name="produto-vendido ">
+        </div>
+
+        <div class="formularios-adicionar-produtos ">
+            <label for="opção-de-pagamento ">Opção de pagamento: </label>
+
+            <input class=input-geral type="text " list="opção-de-pagamento " name="opção-de-pagamento ">
+            <datalist id="opção-de-pagamento ">
+                <option value="Dinheiro ">Dinheiro</option>
+                <option value="Cartão ">Cartão</option>
+              </datalist>
+        </div>
+
+        <div class="formularios-adicionar-produtos ">
+            <label for="funcionario ">Funcionário: </label>
+            <input class=input-geral type="url " list="funcionario " name="funcionario ">
+            <datalist id="funcionario ">
+                <option value="Amanda de Paula ">Amanda de Paula</option>
+                <option value="Victor Tsuka ">Victor Tsuka</option>
+                <option value="Pedro Moreira Neto ">Pedro Moreira Neto</option>
+                <option value="Beatriz Lott ">Beatriz Lott</option>
+              </datalist>
+        </div>
+
+        <div class="formularios-adicionar-produtos ">
+
+            <button type="submit" value="submit">Adicionar</button>
+        </div>
+
+    </form>
+    <footer>
+        © Drip Imports - Todos os direitos reservados. 2021
+    </footer>
+</body>
+
+</html>
