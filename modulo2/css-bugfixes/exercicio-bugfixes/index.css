@@ -85,6 +85,10 @@ div img {
     font-size: 60px;
 }
 
+#botao-amarelo {
+    margin: auto;
+}
+
 
 /**
   *
@@ -113,7 +117,6 @@ td button {
     margin-top: 20px;
     height: 100px;
 }
-
 
 #back-button {
     background-color: white;
