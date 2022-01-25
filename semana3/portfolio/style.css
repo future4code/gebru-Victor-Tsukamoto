@@ -1,15 +1,24 @@
+* {
+    overflow: hidden;
+    font-family: 'Bebas Neue', cursive;
+}
+
 header {
     display: flex;
     justify-content: space-evenly;
-    border: 2.5px solid rgb(0, 0, 0);
-    font-size: 20px;
+    border: 0.01px solid black;
+    font-size: 22px;
     font-weight: bold;
+}
+
+header>a {
+    text-decoration: none;
+    color: black;
 }
 
 footer {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
 }
 
 footer>a {
@@ -17,25 +26,125 @@ footer>a {
 }
 
 body {
-    background-color: rebeccapurple;
+    background-color: #663399;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 main {
     width: 100%;
-}
-
-main>p> {
-    display: flex;
-    justify-content: center;
-    border: 10px solid black
+    flex: 1;
 }
 
 main>center>img {
-    padding: 25px;
-    padding-top: 50px;
+    margin: 100px;
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
     text-align: center;
+}
+
+main>center>h1 {
+    color: #CCAD2F;
+    font-size: 30px;
+}
+
+main>center>h2 {
+    color: #CCAD2F;
+    font-size: 20px;
+}
+
+main#sobre-mim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: #CCAD2F
+}
+
+main#sobre-mim>h1 {
+    margin-left: 40px;
+}
+
+main#formação {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    color: #CCAD2F
+}
+
+.bloco-formacao {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.bloco-formacao>img {
+    width: 100px;
+    height: 100px;
+}
+
+.bloco-formacao>p {
+    font-size: 15px
+}
+
+main#skills {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 15%;
+    align-items: center;
+    text-align: justify;
+    color: #CCAD2F
+}
+
+main#skills>img {
+    max-width: 20%;
+    max-height: 20%;
+    margin-right: 5%;
+}
+
+main#contato>form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+main#contato>form>p {
+    font-size: 25px;
+    color: #CCAD2F
+}
+
+main#contato>form>input#text {
+    width: 25vh;
+    height: 2.5vh;
+}
+
+main#contato>form>input#email {
+    width: 25vh;
+    height: 2.5vh;
+}
+
+main#contato>form>input#mensagem {
+    width: 100vh;
+    height: 25vh;
+}
+
+main#main-projetos>a>h1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    text-decoration: none;
+    color: black
+}
+
+main#main-projetos>h2 {
+    display: flex;
+    justify-content: space-around;
+    color: #CCAD2F
 }
