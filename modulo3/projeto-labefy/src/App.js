@@ -2,7 +2,7 @@ import React from 'react'
 import MenuScreen from './components/MenuScreen';
 import PlaylistScreen from './components/PlaylistScreen';
 import styled from 'styled-components';
-import CreatePlaylistScreen from './components/CreatePlaylist';
+import CreatePlaylistScreen from './components/CreatePlaylistScreen';
 
 const Header = styled.h1 `
 display: flex;

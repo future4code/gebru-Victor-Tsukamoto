@@ -70,17 +70,17 @@ class PlaylistScreen extends React.Component {
             console.log(err.response)
         }
 
-
     }
 
     render() {
-        const renderedPlaylists = this.state.playlists.map((playlists) => {
+
+        const renderedPlaylist = this.state.playlists.map((playlist) => {
             return ( <
-                UserCard key = { playlists.id } >
+                UserCard key = { playlist.id } >
                 <
-                CenterTheSpan > { playlists.name } < /CenterTheSpan> <
+                span > { playlist.name } < /span> <
                 button onClick = {
-                    () => this.deletePlaylist(playlists.id) } > Apagar playlist { playlists.name } < /button> <
+                    () => this.deletePlaylist(playlist.id) } > Apagar { playlist.name } < /button> <
                 /UserCard>
             )
         })
@@ -88,7 +88,7 @@ class PlaylistScreen extends React.Component {
         return ( <
             div >
             <
-            TituloH3 > Playlists: < /TituloH3> { renderedPlaylists } <
+            TituloH3 > Playlists: < /TituloH3> { renderedPlaylist } <
             Button onClick = { this.props.goToMenuScreen } > Ir para Cadastro < /Button> <
             /div>
         )
