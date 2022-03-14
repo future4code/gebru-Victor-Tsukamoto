@@ -1,5 +1,5 @@
 import React from 'react'
-import axios from 'axios'
+
 import styled from 'styled-components'
 
 const DivBGColor = styled.div `
@@ -45,8 +45,7 @@ class MenuScreen extends React.Component {
                 ButtonDiv >
                 <
                 Button onClick = { this.props.goToCreatePlaylistScreen } > Create a Playlist < /Button> <
-                Button onClick = { this.props.goToPlaylistScreen } > Show my Playlists < /Button> <
-                /ButtonDiv>
+            Button onClick = { this.props.goToPlaylistScreen } > Show my Playlists < /Button> </ButtonDiv >
 
             <
             /DivBGColor>

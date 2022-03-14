@@ -66,21 +66,18 @@ class CreatePlaylistScreen extends React.Component {
         return ( <
             DivBGColor >
             <
-            TituloH3 > What do you want to do today ? < /TituloH3> <
-                    DivInputs >
-                    <
-                    input
-                placeholder = "Insira o nome da sua playlist =)"
+            TituloH3 > Create yours playlist name < /TituloH3> <
+            DivInputs >
+            <
+            input placeholder = "Insira o nome da sua playlist =)"
             value = { this.state.playlistNameInput }
             onChange = { this.handlePlaylistNameInput }
 
             />
 
             <
-            button onClick = { this.createPlaylist } > Criar < /button> <
-            /DivInputs> <
-            Button onClick = { this.props.goToMenuScreen } > Voltar para a página inicial < /Button> <
-            /DivBGColor>
+            button onClick = { this.createPlaylist } > Criar < /button> </DivInputs > <
+            Button onClick = { this.props.goToMenuScreen } > Voltar para a página inicial < /Button> </DivBGColor >
         )
     }
 }

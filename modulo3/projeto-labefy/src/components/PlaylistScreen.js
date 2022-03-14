@@ -20,6 +20,7 @@ const CenterTheSpan = styled.span `
 display: flex;
 margin: 0 auto;
 margin-top:12px;
+color: white;
 `
 const Button = styled.button `
 display: flex;
@@ -47,7 +48,7 @@ class PlaylistScreen extends React.Component {
                 }
             })
 
-            this.setState({ playlists: res.data })
+            this.setState({ playlists: res.data.result.list })
         } catch (err) {
             console.log(err.response)
         }
@@ -72,27 +73,28 @@ class PlaylistScreen extends React.Component {
 
     }
 
+
+
     render() {
 
         const renderedPlaylist = this.state.playlists.map((playlist) => {
-            return ( <
-                UserCard key = { playlist.id } >
+            return <UserCard key = { playlist.id } >
                 <
-                span > { playlist.name } < /span> <
+                CenterTheSpan > { playlist.name } < /CenterTheSpan> <
                 button onClick = {
-                    () => this.deletePlaylist(playlist.id) } > Apagar { playlist.name } < /button> <
+                    () => this.deletePlaylist(playlist.id) } > Apagar { playlist.name } < /button>  <
+                button onClick = {
+                    () => this.props.goToPlaylistDetailsScreen(playlist.id) } > Visualizar { playlist.name } < /button> <
                 /UserCard>
-            )
+
         })
 
-        return ( <
-            div >
+        return ( < div >
             <
-            TituloH3 > Playlists: < /TituloH3> { renderedPlaylist } <
-            Button onClick = { this.props.goToMenuScreen } > Ir para Cadastro < /Button> <
-            /div>
+            TituloH3 > Playlists: < /TituloH3> { renderedPlaylist } < Button onClick = { this.props.goToMenuScreen } > Ir para Cadastro </Button > < /div>
         )
     }
 }
+
 
 export default PlaylistScreen

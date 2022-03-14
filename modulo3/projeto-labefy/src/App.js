@@ -3,6 +3,7 @@ import MenuScreen from './components/MenuScreen';
 import PlaylistScreen from './components/PlaylistScreen';
 import styled from 'styled-components';
 import CreatePlaylistScreen from './components/CreatePlaylistScreen';
+import PlaylistDetailsScreen from './components/PlaylistDetailsScreen';
 
 const Header = styled.h1 `
 display: flex;
@@ -36,7 +37,8 @@ width: 100vw ;
 
 class App extends React.Component {
     state = {
-        renderedScreen: 'menu'
+        renderedScreen: 'menu',
+        playlistId: ''
     }
 
     chooseScreen = () => {
@@ -47,9 +49,15 @@ class App extends React.Component {
                 /> 
             case 'playlists':
                 return <PlaylistScreen goToMenuScreen = { this.goToMenuScreen }
+                goToPlaylistDetailsScreen = { this.goToPlaylistDetailsScreen }
+                playlistId = { this.state.playlistId }
                 />
             case 'createplaylist':
                 return <CreatePlaylistScreen goToMenuScreen = { this.goToMenuScreen }
+                />
+            case 'playlistdetails-screen':
+                return <PlaylistDetailsScreen goToMenuScreen = { this.goToMenuScreen }
+                playlistId = { this.state.playlistId }
                 />
             default:
                 return <h2 > Erro!Página não encontrada! < /h2>
@@ -67,15 +75,16 @@ class App extends React.Component {
     goToCreatePlaylistScreen = () => {
         this.setState({ renderedScreen: 'createplaylist' })
     }
-
+    goToPlaylistDetailsScreen = (playlistId) => {
+        this.setState({ renderedScreen: 'playlistdetails-screen', playlistId: playlistId })
+    }
     render() {
         return ( <
             DivBGColor >
             <
             Header > < HeaderP > Labefy < /HeaderP><HeaderPTitle>Not about just music.</HeaderPTitle > < /Header>
 
-            { this.chooseScreen() } <
-            /DivBGColor>
+            { this.chooseScreen() } < /DivBGColor>
         );
     }
 }
